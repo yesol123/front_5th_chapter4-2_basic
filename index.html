@@ -56,9 +56,17 @@
         
         <section class="hero">
 
-            <img class="desktop" src="images/Hero_Desktop.webp">
-            <img class="mobile" src="images/Hero_Mobile.webp">
-            <img class="tablet" src="images/Hero_Tablet.webp">
+            <picture>
+                <!-- 모바일 먼저 -->
+                <source media="(max-width: 576px)" srcset="images/Hero_Mobile.webp" type="image/webp">
+                <!-- 태블릿 -->
+                <source media="(max-width: 960px)" srcset="images/Hero_Tablet.webp" type="image/webp">
+                <!-- 데스크탑 기본 -->
+                <source srcset="images/Hero_Desktop.webp" type="image/webp">
+                
+                <!-- fallback image -->
+                <img src="images/Hero_Desktop.webp" alt="Hero Banner" loading="lazy">
+            </picture>
 
            
             <div class="hero-content">
@@ -198,8 +206,8 @@
          <a href="#" id="open_preferences_center">Update cookies preferences</a>
  
 
-        <script type="text/javascript" src="/js/main.js"></script>
-        <script type="text/javascript" src="/js/products.js"></script>
+        <script type="text/javascript" src="/js/main.js" defer></script>
+        <script type="text/javascript" src="/js/products.js" defer></script>
 
     </body>
 

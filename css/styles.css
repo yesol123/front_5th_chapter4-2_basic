@@ -246,7 +246,6 @@ section.best-sellers .product-slider .product .product-picture {
 
 section.best-sellers .product-slider .product.new::before {
     content: "New";
-    background-color: #614dc9;
     position: absolute;
     top: 12px;
     right: 12px;
