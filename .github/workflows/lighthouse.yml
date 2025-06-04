@@ -33,7 +33,7 @@ jobs:
           npm install -g http-server
           
       - name: Start local server
-        run:  http-server front_5th_chapter4-2_basic/out -p 8080 &
+        run: http-server . -p 8080 &
         
       - name: Run Lighthouse CI
         id: lighthouse
