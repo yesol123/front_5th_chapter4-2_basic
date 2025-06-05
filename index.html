@@ -5,9 +5,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#ffffff">
         <title>Home - Tech Shop</title>
-        <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,600,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/styles.css">
+        <link rel="preload" as="image" href="images/Hero_Desktop.webp" imagesrcset="images/Hero_Desktop.webp" fetchpriority="high">
         <!-- <link rel="stylesheet" type="text/css" href="/css/slick.css"/> -->
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -65,7 +69,7 @@
                 <source srcset="images/Hero_Desktop.webp" type="image/webp">
                 
                 <!-- fallback image -->
-                <img src="images/Hero_Desktop.webp" alt="Hero Banner" loading="lazy">
+                <img src="images/Hero_Desktop.webp" alt="Hero Banner" loading="lazy" width="1440" height="700">
             </picture>
 
             <div class="hero-content">
@@ -91,7 +95,7 @@
 
                     <div class="product new">
                         <div class="product-picture">
-                            <img src="images/vr1.webp" alt="product: Penom Case">
+                            <img src="images/vr1.webp" alt="product: Penom Case" width="400" height="400">
                         </div>
                         <div class="product-info">
                             <h5 class="categories">Headsets, Apple</h5>
@@ -150,7 +154,8 @@
             <h3>Newsletter Signup</h3>
             <p>Subscribe now and don't miss a single deal!</p>
             <form>
-                <input type="email" name="email" placeholder="Your email...">
+                <label for="newsletter-email" class="sr-only">Email address</label>
+                <input id="newsletter-email" type="email" name="email" placeholder="Your email..." aria-label="Your email">
                 <button type="submit">Subscribe</button>
             </form>
         </section>
