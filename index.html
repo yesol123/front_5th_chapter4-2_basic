@@ -24,9 +24,7 @@
 
         <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
         <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
-        <script type="text/javascript" charset="UTF-8">
-            cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Performance Course"});
-        </script>
+       
               
     </head>
 
@@ -59,30 +57,28 @@
         </header>
         
         <section class="hero">
-
             <picture>
-                <!-- 모바일 먼저 -->
-                <source media="(max-width: 576px)" srcset="images/Hero_Mobile.webp" type="image/webp">
-                <!-- 태블릿 -->
-                <source media="(max-width: 960px)" srcset="images/Hero_Tablet.webp" type="image/webp">
-                <!-- 데스크탑 기본 -->
-                <source srcset="images/Hero_Desktop.webp" type="image/webp">
-                
-                <!-- fallback image -->
-                <img src="images/Hero_Desktop.webp" alt="Hero Banner" loading="lazy" width="1440" height="700">
+              <!-- 모바일 -->
+              <source media="(max-width: 576px)" srcset="images/Hero_Mobile.webp" type="image/webp">
+              <!-- 태블릿 -->
+              <source media="(max-width: 960px)" srcset="images/Hero_Tablet.webp" type="image/webp">
+              <!-- 데스크탑 -->
+              <source srcset="images/Hero_Desktop.webp" type="image/webp">
+              
+              <!-- fallback -->
+              <img src="images/Hero_Desktop.webp" alt="Hero Banner" width="1440" height="700" fetchpriority="high">
             </picture>
-
+          
             <div class="hero-content">
-                <div class="container">
-                    <h1>Discover our line of VR Headsets</h1>
-                    <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-                        doloremque laudantium.
-                    </p>
-                    <button>View Headsets</button>
-                </div>
+              <div class="container">
+                <h1>Discover our line of VR Headsets</h1>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                </p>
+                <button>View Headsets</button>
+              </div>
             </div>
-        </section>
+          </section>
 
         <section class="country-bar hidden">
         </section>
@@ -95,7 +91,7 @@
 
                     <div class="product new">
                         <div class="product-picture">
-                            <img src="images/vr1.webp" alt="product: Penom Case" width="400" height="400">
+                            <img src="images/vr1.webp" alt="product: Penom Case" width="400" height="400" loading="lazy">
                         </div>
                         <div class="product-info">
                             <h5 class="categories">Headsets, Apple</h5>
@@ -109,7 +105,7 @@
 
                     <div class="product new">
                         <div class="product-picture">
-                            <img src="images/vr2.webp" alt="product: Noise Cancelling Headphone">
+                            <img src="images/vr2.webp" alt="product: Noise Cancelling Headphone" width="400" height="400" loading="lazy">
                         </div>
                         <div class="product-info">
                             <h5 class="categories">Headsets, PS</h5>
@@ -123,7 +119,7 @@
 
                     <div class="product">
                         <div class="product-picture">
-                            <img src="images/vr3.webp" alt="product: Canon Digital SLR EOS Rebel T6">
+                            <img src="images/vr3.webp" alt="product: Canon Digital SLR EOS Rebel T6" width="400" height="400" loading="lazy">
                         </div>
                         <div class="product-info">
                             <h5 class="categories">Headsets, Oculus</h5>
@@ -215,4 +211,7 @@
 
     </body>
 
+    <script type="text/javascript" charset="UTF-8">
+        cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Performance Course"});
+    </script>
 </html>
