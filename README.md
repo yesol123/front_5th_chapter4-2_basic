@@ -1,4 +1,6 @@
-# 🛠️ 성능 개선 사후 보고서 (PWA 제외)
+# 🛠️ 바닐라 JS 프로젝트 성능 개선
+- url: https://front-5th-chapter4-2-basic-psi.vercel.app/
+
 
 ## ✅ 개선 이유
 
