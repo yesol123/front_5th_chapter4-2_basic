@@ -50,16 +50,20 @@
 
 | 항목                    | 개선 전 | 개선 후 |
 | ----------------------- | ------- | ------- |
-| Performance             | 68%     | 86%     |
-| Accessibility           | 89%     | 95%     |
-| Best Practices          | 60%     | 71%     |
-| SEO                     | 70%     | 91%     |
-| CLS (Cumulative Layout) | 0.12    | 0.011   |
-| LCP (Largest Paint)     | 5.2s    | 3.68s   |
+| Performance             | 73%     | 87%     |
+| Accessibility           | 82%     | 95%     |
+| Best Practices          | 75%     | 71%     |
+| SEO                     | 82%     | 100%    |
+| PWA                     |  0%     |  0%     |
+| LCP (Largest Paint)     | 14.03s  | 3.83s   |
 
 > ⚠️ 측정 기준: Lighthouse CI, `localhost:8080` 기준 테스트
 
 ---
+
+구글 PageSpeed Insights를 사용한 성능 측정
+
+![image](https://github.com/user-attachments/assets/5744227a-4942-4122-8930-f7b9783a03af)
 
 ## 📝 참고
 
