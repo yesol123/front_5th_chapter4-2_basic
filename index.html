@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#ffffff">
-        <link rel="manifest" href="/manifest.json">
+        <link rel="manifest" href="manifest.json">
         <title>Home - Tech Shop</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -212,14 +212,17 @@
         <script>
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('/sw.js')
+                    console.log('Service Worker 지원 확인됨');
+                    navigator.serviceWorker.register('sw.js')
                         .then(registration => {
-                            console.log('ServiceWorker registration successful');
+                            console.log('ServiceWorker 등록 성공:', registration.scope);
                         })
                         .catch(err => {
-                            console.log('ServiceWorker registration failed: ', err);
+                            console.error('ServiceWorker 등록 실패:', err);
                         });
                 });
+            } else {
+                console.log('Service Worker를 지원하지 않는 브라우저입니다.');
             }
         </script>
     </body>
